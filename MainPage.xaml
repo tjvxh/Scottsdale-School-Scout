@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="#f0f0f2"
+             x:Class="ScottsdaleSchoolScout.MainPage"
+             Shell.NavBarIsVisible="false">
+
+
+    <VerticalStackLayout>
+        <!-- Logo image -->
+        <Image 
+            TranslationY="0"
+            Margin="100,125,100,0"
+            Source="appicon.jpg" HorizontalOptions="Center" VerticalOptions="StartAndExpand" />
+
+        <!-- "Line" label -->
+        <Label Margin="0,-20,10,0"
+               TranslationY="0"
+               Text="────────"
+               FontAttributes="None"
+               FontFamily="SourceSans3ExtraLight"
+               FontSize="53"
+               TextColor="#2e3d6e"
+               HorizontalOptions="Center"
+               VerticalOptions="StartAndExpand" />
+
+        <!-- "Study Hall" label -->
+        <Label Margin="0,-15,0,0"
+               TranslationY="0"
+               Text="SCOTTSDALE SCHOOL SCOUT"
+               FontAutoScalingEnabled="True"
+               FontAttributes="None"
+               HorizontalTextAlignment="Center"
+               FontFamily="SourceSans3Light"
+               FontSize="42"
+               TextColor="Black"
+               HorizontalOptions="Fill"
+               VerticalOptions="StartAndExpand" />
+
+        <Button  x:Name="getStartedButton" 
+            Padding="20,10 ,20, 10"
+                 Margin="50,77,50,00" 
+                 TranslationY="0"
+                 Text="GET STARTED" HeightRequest="60"
+                 BackgroundColor="#2e3d6e"
+                 FontFamily="SourceSans3Regular"
+                 FontSize="20" HorizontalOptions="Fill"
+                 VerticalOptions="Center"
+                 TextColor="White"
+                 CornerRadius="30"
+                 Clicked="getStartedButton_Clicked"/>
+
+
+    </VerticalStackLayout>
+</ContentPage>
+
+
+
